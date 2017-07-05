@@ -4,6 +4,7 @@ require_relative('../dice.rb')
 require_relative('../ladder.rb')
 require_relative('../player.rb')
 require_relative('../snake.rb')
+require_relative('../game_rules.rb')
 
 class TestBoard < Minitest::Test
 
@@ -13,10 +14,11 @@ class TestBoard < Minitest::Test
     
     @player = Player.new("Player1")
 
-    # snake starts at 17 ends at 2
+
     @snake = Snake.new([2, 17])
     @ladder = Ladder.new([5, 15])
     @dice = Dice.new(4)
+    
   end
 
 

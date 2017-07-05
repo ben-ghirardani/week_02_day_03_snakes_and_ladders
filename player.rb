@@ -10,7 +10,7 @@ class Player
   end
 
 # do we need exclamation mark to set the change as permanent or is that happening somehow?
-  def move_player_position(number)
+  def player_position(number)
       @position += number
   end
 

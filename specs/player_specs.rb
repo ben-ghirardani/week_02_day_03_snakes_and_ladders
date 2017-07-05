@@ -9,7 +9,7 @@ require_relative('../game_rules.rb')
 class TestPlayer < Minitest::Test
   
   def setup
-    @player = Player.new("John")  
+    @player1 = Player.new("John")  
   end
 
   def test_player_original_position
@@ -17,7 +17,7 @@ class TestPlayer < Minitest::Test
   end 
 
   def test_player_move
-    assert_equal(5, @player.move_player_position(5))
+    assert_equal(5, @player.player_position(5))
   end
 
 
